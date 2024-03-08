@@ -19,7 +19,7 @@ global.owner = [
 //💌------------------------------------------💌
 
 
-//💌global.pairingNumber = "" //put your bot number here💌
+254102028964//💌global.pairingNumber = "" //put your bot number here💌
 global.mods = ['254102028964'] 
 global.prems = ['254113246775','254102028964']
 global.allowed = ['254113246775']
@@ -120,7 +120,7 @@ global.developer = 'https://wa.me/message/DCAK67ON3XVOG1' //contact
 
 
 //Sticker WM
-global.botname = '𝘗𝘙𝘐𝘕𝘊𝘌-𝘉𝘖𝘛-𝘔𝘋'
+global.botname = 'MERSEYSIDE♟💫⭐🌠✨♟'
 global.princebot = '🛡️𝘗𝘙𝘐𝘕𝘊𝘌-𝘉𝘖𝘛-𝘔𝘋🛡️'
 global.packname = 'Prince♥️' 
 global.author   = 'Merseyside'
