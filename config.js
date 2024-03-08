@@ -19,7 +19,7 @@ global.owner = [
 //💌------------------------------------------💌
 
 
-254102028964//💌global.pairingNumber = "" //put your bot number here💌
+254782108947//💌global.pairingNumber = "" //put your bot number here💌
 global.mods = ['254102028964'] 
 global.prems = ['254113246775','254102028964']
 global.allowed = ['254113246775']
