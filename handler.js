@@ -132,20 +132,20 @@ export async function handler(chatUpdate) {
             if (chat) {
                 if (!("antiDelete" in chat)) chat.antiDelete = true
                 if (!("antiLink" in chat)) chat.antiLink = false
-                if (!("antiSticker" in chat)) chat.antiSticker = false
+                if (!("antiSticker" in chat)) chat.antiSticker = true
                 if (!("antiToxic" in chat)) chat.antiToxic = false
-                if (!("detect" in chat)) chat.detect = false
+                if (!("detect" in chat)) chat.detect = true
                 if (!("getmsg" in chat)) chat.getmsg = true
                 if (!("isBanned" in chat)) chat.isBanned = false
                 if (!("nsfw" in chat)) chat.nsfw = false
-                if (!("sBye" in chat)) chat.sBye = ""
+                if (!("sBye" in chat)) chat.sBye = true
                 if (!("sDemote" in chat)) chat.sDemote = ""
                 if (!("simi" in chat)) chat.simi = false
                 if (!("sPromote" in chat)) chat.sPromote = ""
                 if (!("sWelcome" in chat)) chat.sWelcome = ""
                 if (!("useDocument" in chat)) chat.useDocument = false
-                if (!("viewOnce" in chat)) chat.viewOnce = false
-                if (!("viewStory" in chat)) chat.viewStory = false
+                if (!("viewOnce" in chat)) chat.viewOnce = true
+                if (!("viewStory" in chat)) chat.viewStory = true
                 if (!("welcome" in chat)) chat.welcome = false
                 if (!("chatbot" in chat)) chat.chatbot = false
                 if (!isNumber(chat.expired)) chat.expired = 0
@@ -153,22 +153,22 @@ export async function handler(chatUpdate) {
                 global.db.data.chats[m.chat] = {
                     antiDelete: true,
                     antiLink: false,
-                    antiSticker: false,
+                    antiSticker:true ,
                     antiToxic: false,
                     detect: false,
                     expired: 0,
                     getmsg: true,
                     isBanned: false,
                     nsfw: false, 
-                    sBye: "",
+                    sBye: true,
                     sDemote: "",
                     simi: false,
                     sPromote: "",
-                    sticker: false,
+                    sticker: true,
                     sWelcome: "",
                     useDocument: false,
-                    viewOnce: false,
-                    viewStory: false,
+                    viewOnce: true,
+                    viewStory: true,
                     welcome: false,
                     chatbot: false
                 }
@@ -177,7 +177,7 @@ export async function handler(chatUpdate) {
             let settings = global.db.data.settings[this.user.jid]
             if (typeof settings !== "object") global.db.data.settings[this.user.jid] = {}
             if (settings) {
-                if (!("self" in settings)) settings.self = false
+                if (!("self" in settings)) settings.self = true
                 if (!("autoread" in settings)) settings.autoread = false
                 if (!("restrict" in settings)) settings.restrict = false
                 if (!("restartDB" in settings)) settings.restartDB = 0
@@ -526,8 +526,8 @@ export async function participantsUpdate({
     const emoji = {
         promote: '👤🛡️',
         demote: '👤🙅‍♂️',
-        welcome: '👋',
-        bye: '👋',
+        welcome: '🌚🌚🌚',
+        bye: '🌚🌚',
         bug: '🐛',
         mail: '📮',
         owner: '🛡️'
@@ -821,7 +821,7 @@ global.dfail = (type, m, conn) => {
         botAdmin: '❎',
         unreg: '🔒',
         nsfw: '🔞',
-        rpg: '🎮',
+        rpg: '🎮⚽♟',
         restrict: '⛔',
     }
 
