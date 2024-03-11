@@ -132,7 +132,7 @@ export async function handler(chatUpdate) {
             if (chat) {
                 if (!("antiDelete" in chat)) chat.antiDelete = true
                 if (!("antiLink" in chat)) chat.antiLink = false
-                if (!("antiSticker" in chat)) chat.antiSticker = false
+                if (!("antiSticker" in chat)) chat.antiSticker = true
                 if (!("antiToxic" in chat)) chat.antiToxic = false
                 if (!("detect" in chat)) chat.detect = false
                 if (!("getmsg" in chat)) chat.getmsg = true
@@ -526,8 +526,8 @@ export async function participantsUpdate({
     const emoji = {
         promote: '👤🛡️',
         demote: '👤🙅‍♂️',
-        welcome: '👋',
-        bye: '👋',
+        welcome: '🌚',
+        bye: '🌚',
         bug: '🐛',
         mail: '📮',
         owner: '🛡️'
