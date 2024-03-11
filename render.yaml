@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: THE-PRINCE-BOT
+    name: MERSEYSIDE♟💫⭐🌠✨♟
     env: docker
-    region: Frankfurt
+    region: Kisumu
     plan: free
